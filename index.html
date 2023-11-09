@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Sample Website</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logoDA.png" alt="Logo of Department of Agriculture" />
+      </header>
+
+      <nav>
+        <a href="index.html"><b>HOME</b></a>
+        <a href="#"><b>ABOUT US</b></a>
+        <a href="#"><b>CONTACT</b></a>
+        
+      </nav>
+      <br>
+        <!-- Default Card -->
+        <center>
+          <div class="card">
+            <div class="card-body">
+              <h3>Provinces of Ilocos Region</h3>
+                <a href="view_ilocosnorte.php">
+                  <button class="button button1">Ilocos Norte</button>
+                </a>
+                <a href="view_ilocossur.php">
+                  <button class="button button1">Ilocos Sur</button>
+                </a> 
+                <a href="view_launion.php">
+                  <button class="button button1">La Union</button>
+                </a> 
+                <a href="view_pangasinan.php">
+                  <button class="button button1">Pangasinan</button>
+                </a>
+                <p>Total Farmers per Provinces of Ilocos Region</p> 
+                <center>
+                <canvas id="myChart" style="width:90%;max-width:500px"></canvas></center>
+              </div>
+            </div>
+          </div><!-- End Default Card -->
+          </center>
+<br>
+<!-- <center>
+      <div class="cards">
+        <div class="card-body">
+          <h5 class="card-title">Total Municipalities <span> | Total barangays</span></h5>
+          <div class="d-flex align-items-center">
+              <h2>
+               <b>44</b> Municipalities <span>and 1,364 barangays</span> 
+              </h2>
+          </div>
+        </div>
+      </div>
+</center>
+<br> -->
+ <center>
+      <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2022511.2776601252!2d120.14883396204094!3d16.733579756208332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338ec93a364ff48b%3A0x32315f5d267980cd!2sIlocos%20Region!5e1!3m2!1sen!2sph!4v1699410163905!5m2!1sen!2sph" 
+        width="600"
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </center>
+      <footer>
+        <p>MJNP - Copyright 2023©</p>
+      </footer>
+    </div>
+  
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+  const xValues = ["Ilocos Norte", "Ilocos Sur", "La Union", "Pangasinan"];
+  const yValues = [87963, 89816, 73776, 207084];
+  const barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+  ];
+  
+  new Chart("myChart", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+        
+      }]
+    },
+    options: {
+      title: {
+        display: false,
+        text: "Total Farmers Per Provinces of Ilocos Region"
+        
+        
+      }
+    }
+  });
+  </script>

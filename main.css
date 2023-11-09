@@ -1,0 +1,150 @@
+
+body {
+    background-color: #969799;
+    background-image: url(images/rice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+header {
+    height: 118px;
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(199, 194, 194, 0.267);
+    width: 1000px;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+
+}
+.cards {
+    background-color: rgb(238, 232, 232);
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 10px;
+
+}
+
+.card-right {
+    background-color: rgba(252, 246, 246, 0.795);
+    width: 600px;
+    height:350px;
+    float: right;
+    text-align: left;
+    padding-top: 14px;
+    padding-bottom: 10px;
+
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.267);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+}
+
+main {
+    height: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.548); 
+}
+
+h1 {
+    font-size: 54px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h3 {
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h4 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(15, 15, 15);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+img {
+    width: 80px;
+    padding-top: 20px;
+}
+data {
+    width: 200px;
+    padding-top: 100px;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: #04AA6D;} /* Green */
+
+.maps {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.ilocosmaps {
+    float: left;
+    padding-bottom: 50px;
+}
+.ilocosDingrasmaps {
+    float: left;
+    padding-bottom: 50px;
+}
